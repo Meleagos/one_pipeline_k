@@ -1,0 +1,1139 @@
+schema: '2.0'
+stages:
+  download-data:
+    cmd: dvc get-url s3://danmartinec-iterative-bucket/data_registry/data/coco17_sample/
+      data/training
+    deps:
+    - path: configs/segments.yml
+      md5: d13e0e8ad4fd403eb70b97bc6620b873
+      size: 89
+    - path: upload_log.txt
+      md5: 9d7ae26e5fda75ca534f71ea717d6307
+      size: 111
+    params:
+      configs/segments.yml:
+        config:
+          s3_path: s3://danmartinec-iterative-bucket/data_registry/data/coco17_sample/
+    outs:
+    - path: data/training
+      md5: 3ed4bf57846ec8c6899fecb8538bdd9f.dir
+      size: 23221428
+      nfiles: 154
+      files:
+      - md5: 2ad4acbf285bf8451a352153ecc18b4f
+        relpath: 000000000009.jpg
+      - md5: 93f25d19d885329f9e5d9117c0fe8272
+        relpath: 000000000025.jpg
+      - md5: 61e7641ecae8aa7eebd4a1deca347811
+        relpath: 000000000030.jpg
+      - md5: c8cf74aa607438f2210c7877ba271ea8
+        relpath: 000000000034.jpg
+      - md5: cd68e84c2968caf9b05e184e64eb339e
+        relpath: 000000000036.jpg
+      - md5: 3cb150ae8a2f5861550611daa601d9fe
+        relpath: 000000000042.jpg
+      - md5: 2eecb0947b4e80d7c3b3441aaa17d437
+        relpath: 000000000049.jpg
+      - md5: 8628ea387a170852c369fdbfd940306c
+        relpath: 000000000061.jpg
+      - md5: 74bbf21553e30db313d6440f20a6c799
+        relpath: 000000000064.jpg
+      - md5: a0c7c898b24fa70c22d3b0794367b35d
+        relpath: 000000000071.jpg
+      - md5: e22a5ef25d08ce01238b9bacc7c31d92
+        relpath: 000000000072.jpg
+      - md5: b96c2d58e7918fb3365b5700778ab10a
+        relpath: 000000000073.jpg
+      - md5: 164803b57942f108af3d8dec7babc641
+        relpath: 000000000074.jpg
+      - md5: c4d9e7955378f522fd112b8ce1f126c9
+        relpath: 000000000077.jpg
+      - md5: 5e8de49c07ff59e03b0ba7e75af07752
+        relpath: 000000000078.jpg
+      - md5: 9982345cde5b97309d1f3e4cc9dbb1fc
+        relpath: 000000000081.jpg
+      - md5: 065f51de88998a95fa3113998774af74
+        relpath: 000000000086.jpg
+      - md5: f4e396cc87a286b0940e6b551a2af9ba
+        relpath: 000000000089.jpg
+      - md5: bf7bdac01bbd14056c7f1704bce83281
+        relpath: 000000000092.jpg
+      - md5: 30db25c2ecdb79fc46fa6dbae63cf0a4
+        relpath: 000000000094.jpg
+      - md5: 8ded067424525492f74ec25752bd9c3f
+        relpath: 000000000109.jpg
+      - md5: 23ee9d2be85f0888240d4e88a8c49904
+        relpath: 000000000110.jpg
+      - md5: a37a5ba2c7a2fc1a14c57967d6941b53
+        relpath: 000000000113.jpg
+      - md5: d2f9b9a0acdb4ecc73884aefd4a201e1
+        relpath: 000000000127.jpg
+      - md5: d78455dfc227765c034b5dae95e5880b
+        relpath: 000000000133.jpg
+      - md5: d8d1e0109edb32382d94a1260b3fde91
+        relpath: 000000000136.jpg
+      - md5: 339d0f9607c9ce3fec681ca3eeca1216
+        relpath: 000000000138.jpg
+      - md5: 75b37756f557ca668eabffaba11ce843
+        relpath: 000000000142.jpg
+      - md5: c205d923ad43153facd2d81e4fbedcd0
+        relpath: 000000000143.jpg
+      - md5: 5c3b132a5ac9aa6b65c3fbccf5bd8aae
+        relpath: 000000000144.jpg
+      - md5: 930559902d3757f9a918e896340840c1
+        relpath: 000000000149.jpg
+      - md5: 72711e1fa6c13e4d032a5b4c98475862
+        relpath: 000000000151.jpg
+      - md5: d7d8752cfef5a649cb76fc83a29e7020
+        relpath: 000000000154.jpg
+      - md5: 0b27130754f8b9f080e2018e477356e5
+        relpath: 000000000164.jpg
+      - md5: 53dd2d8ee2cd6841e59d0f7f48a96426
+        relpath: 000000000165.jpg
+      - md5: 6cdfe820d79d4dfe8ea39d3734a5f238
+        relpath: 000000000192.jpg
+      - md5: 85fa38dbcedbe8619926b3255b25c9e2
+        relpath: 000000000194.jpg
+      - md5: 1a1eae51b52d4984e0c20755fe3a299e
+        relpath: 000000000196.jpg
+      - md5: 812de9f90cce08afa0f6fec96dd3770a
+        relpath: 000000000201.jpg
+      - md5: f8946fb744237c3604c2df7285cfbed1
+        relpath: 000000000208.jpg
+      - md5: 7f45e800090917ac47fd93dd1ad458cd
+        relpath: 000000000241.jpg
+      - md5: 02e5eaf642cc423538fbde8845089013
+        relpath: 000000000247.jpg
+      - md5: 1ca95dec1db85a369d24ecfe3ac99bea
+        relpath: 000000000250.jpg
+      - md5: ec778ebd991928a8e09944a23914f168
+        relpath: 000000000257.jpg
+      - md5: 7d2c8fbe006893632a85dd59af215781
+        relpath: 000000000260.jpg
+      - md5: d95306ede2ddb27ac8d82a0cc28ac158
+        relpath: 000000000263.jpg
+      - md5: 94bbb2147a592274e9e2544e53965b80
+        relpath: 000000000283.jpg
+      - md5: 0822a16f610a43a0b232eaab842ba624
+        relpath: 000000000294.jpg
+      - md5: c4a9a44c09f83b57edd86bb97563287d
+        relpath: 000000000307.jpg
+      - md5: cf120c69e85caab3f6c5c58a391e1eeb
+        relpath: 000000000308.jpg
+      - md5: 7422dc88f9d2f72e389ef2ef96bdec1a
+        relpath: 000000000309.jpg
+      - md5: 406cc3938f6a418eac4d95ea4dbdc84e
+        relpath: 000000000312.jpg
+      - md5: f88afcd48410d155b52926c307a246fb
+        relpath: 000000000315.jpg
+      - md5: 148f76fb967045fe84d211684a218342
+        relpath: 000000000321.jpg
+      - md5: 8b7bf4420aa1a44830c3126e0dff5b0f
+        relpath: 000000000322.jpg
+      - md5: 68176ce849cb58474aa109498a4820f6
+        relpath: 000000000326.jpg
+      - md5: 98821bb605642f7f17d0c2f31c8392c2
+        relpath: 000000000328.jpg
+      - md5: acecd6566bde5582c193e5d733a88562
+        relpath: 000000000332.jpg
+      - md5: f50d21af7f66741a29d117957a4f21bb
+        relpath: 000000000338.jpg
+      - md5: 7019cb601852fa1300657ae991ef91e0
+        relpath: 000000000349.jpg
+      - md5: 7aa262c93c742f8c2e149cfa99fc78a0
+        relpath: 000000000357.jpg
+      - md5: b70ee4dc822c472180318d5fa6882125
+        relpath: 000000000359.jpg
+      - md5: 02756d5f97edd26679417bb26e5caaab
+        relpath: 000000000360.jpg
+      - md5: e76671942f5bfd51e2c427cbc349ff69
+        relpath: 000000000368.jpg
+      - md5: ab5c4f2e9c86af7c9f16283caf6e3d4e
+        relpath: 000000000370.jpg
+      - md5: 4b7e05c81d2bb15cf51a89ce7c56bc5b
+        relpath: 000000000382.jpg
+      - md5: 72125f8acc381c23c4ef25adc9b4d588
+        relpath: 000000000384.jpg
+      - md5: 518b36c9a60c683e6bce730f4243763d
+        relpath: 000000000387.jpg
+      - md5: 4133df057d6f22cbb9329c07333dcabd
+        relpath: 000000000389.jpg
+      - md5: 07e065bd96b0360ec617a530deda3096
+        relpath: 000000000394.jpg
+      - md5: 64218e038feb0a5915e059c48fc8e00c
+        relpath: 000000000395.jpg
+      - md5: 028bc94536abd1766c71ec3dd1612de1
+        relpath: 000000000397.jpg
+      - md5: b2202347bc56f01468c46aadea220768
+        relpath: 000000000400.jpg
+      - md5: 5734affd0bb4cdba765364ba4e61da06
+        relpath: 000000000404.jpg
+      - md5: 20b666f01589a662fbd6515d69393a1a
+        relpath: 000000000415.jpg
+      - md5: 1e8052b8aa40d7d5faa3da6b37fbc2cd
+        relpath: 000000000419.jpg
+      - md5: 022d8349ed011c1fbce3cefc5ce25136
+        relpath: 000000000428.jpg
+      - md5: 68caaafbcc19a479c4c432df0555438c
+        relpath: 000000000431.jpg
+      - md5: 4b6928321f95dcfe63cdda8bb2bde463
+        relpath: 000000000436.jpg
+      - md5: de6c902a3bd6645290e0f50e344a0a5e
+        relpath: 000000000438.jpg
+      - md5: a61c2b8bf515f7fcf6249661c582068c
+        relpath: 000000000443.jpg
+      - md5: 1bbca2256fb18df9a88a9e703db08597
+        relpath: 000000000446.jpg
+      - md5: 4386704f21aadaf4b59adf7cde3e7ed1
+        relpath: 000000000450.jpg
+      - md5: bb135c6ef92d6710b538f2a6d76ed192
+        relpath: 000000000459.jpg
+      - md5: 3a230be4755b9af725cda70d47e3a381
+        relpath: 000000000471.jpg
+      - md5: 9fab680cb7dbb3f6056b84f1075d923c
+        relpath: 000000000472.jpg
+      - md5: aee093883d1f40ac20e007eb4a75fc01
+        relpath: 000000000474.jpg
+      - md5: 64b952a0bab0afcb4c3bf6cb38918534
+        relpath: 000000000486.jpg
+      - md5: ff1d282774941144a80ddaf74d501760
+        relpath: 000000000488.jpg
+      - md5: a04fe82b8d7931e643308eda1157faf4
+        relpath: 000000000490.jpg
+      - md5: 5520a77198b75d634ba726b29c1c7e7d
+        relpath: 000000000491.jpg
+      - md5: 6c10436130d20f035f4fe74778da63eb
+        relpath: 000000000502.jpg
+      - md5: ba4df7051695a91b2c632176ce643234
+        relpath: 000000000508.jpg
+      - md5: d01085e5b82e527406dfd2fcf2d67654
+        relpath: 000000000510.jpg
+      - md5: 7c6c6e1d949222cd93f02e6d6972f275
+        relpath: 000000000514.jpg
+      - md5: 71e058a8292bbfcd575d7dccc7a5387e
+        relpath: 000000000520.jpg
+      - md5: d265ff63eb22ab8b544a79bb851ded82
+        relpath: 000000000529.jpg
+      - md5: 6c843517f1222632c122a2c394c79e38
+        relpath: 000000000531.jpg
+      - md5: 8875cd33b4930fbac89d19234a941a64
+        relpath: 000000000532.jpg
+      - md5: 61554af8ac197dca84edb12035b0bd21
+        relpath: 000000000536.jpg
+      - md5: f87e356614ca708bae99650ddf10222e
+        relpath: 000000000540.jpg
+      - md5: 27bf7c0bcd289e73e3911fd88849db2a
+        relpath: 000000000542.jpg
+      - md5: ae6fb98b0c0c4b62c5bbd867141e34bf
+        relpath: 000000000544.jpg
+      - md5: db2ad26c294c90d305290562f139ff32
+        relpath: 000000000560.jpg
+      - md5: 6b90629912ac19240bb61cccb8b52f3a
+        relpath: 000000000562.jpg
+      - md5: 49ccd2046f283b9208b1d1283d096072
+        relpath: 000000000564.jpg
+      - md5: 4cdcc595698719985d67187a43aa1009
+        relpath: 000000000569.jpg
+      - md5: 735c9ea6cd036f6980b6230348eb8da8
+        relpath: 000000000572.jpg
+      - md5: 32d04cbe8b6ac2b195022279ee8c44b5
+        relpath: 000000000575.jpg
+      - md5: b1eedf0f54ee777a3654d2a4572c10bf
+        relpath: 000000000581.jpg
+      - md5: a01dc902cf163942637fcd4273b6c118
+        relpath: 000000000584.jpg
+      - md5: a229bbd575a05fee9908a294dfa46c71
+        relpath: 000000000589.jpg
+      - md5: 19272f865f4f366082e671ac625c9565
+        relpath: 000000000590.jpg
+      - md5: 3a78b4c75eda90369f59a70511b17288
+        relpath: 000000000595.jpg
+      - md5: 4fe66e84864ce3d82b7347a31c1be7ba
+        relpath: 000000000597.jpg
+      - md5: 8f9b9f0c0842af3edfe34af9f2ef0482
+        relpath: 000000000599.jpg
+      - md5: 930c9a1e01d71c2e4198156dcc893c28
+        relpath: 000000000605.jpg
+      - md5: b1db420675ea52fdad13f10f85025130
+        relpath: 000000000612.jpg
+      - md5: 9ba47d024ccbada3fec6262345b48f66
+        relpath: 000000000620.jpg
+      - md5: 50017cd3a6d21d209cde26568062d503
+        relpath: 000000000623.jpg
+      - md5: 5c510c7f2742edd3a1d1341609ae1bcd
+        relpath: 000000000625.jpg
+      - md5: 0045d2f5d50d67db3a8c129f4e1f9502
+        relpath: 000000000626.jpg
+      - md5: aebfaa2353dc1caa5d9ebf48236f1a8d
+        relpath: 000000000629.jpg
+      - md5: 17a125e5cec12fbb1a5bf3a9401a51f9
+        relpath: 000000000634.jpg
+      - md5: c1d392e4bef59601bbd9400dddbf1085
+        relpath: 000000000636.jpg
+      - md5: a669b47566a1527b6dcf42a887050d49
+        relpath: 000000000641.jpg
+      - md5: 6d859dc02553ff59f5b3c2f75d774ede
+        relpath: 000000000643.jpg
+      - md5: 9801c006e5537b4e05180e61390f9eeb
+        relpath: 000000000650.jpg
+      - md5: e7e32b18cfefcfb504802f254aabf076
+        relpath: 000000000656.jpg
+      - md5: f6d5f4d92550ea1e99ac4e8641c1ffe7
+        relpath: 000000000659.jpg
+      - md5: 3d92704c1194ac7fbfd9107615a970a2
+        relpath: 000000000661.jpg
+      - md5: 5a926458244ffefc04283304024b5470
+        relpath: 000000000670.jpg
+      - md5: ec9b80356c67b602ddb1ab1d992e392c
+        relpath: 000000000671.jpg
+      - md5: 3147c25c93c9847fcb83b1822c32e65e
+        relpath: 000000000673.jpg
+      - md5: 9a8104ac9464be492f03903033f826cb
+        relpath: 000000000675.jpg
+      - md5: e63b91d3b5a0b82c02f1a3528ea1937b
+        relpath: 000000000681.jpg
+      - md5: 62b6b86585a08b417df7a0c340a90c44
+        relpath: 000000000684.jpg
+      - md5: 34128cbbeeaec7fc21d6b8ee7cd5ce57
+        relpath: 000000000690.jpg
+      - md5: e63767711c9c919c8b74b4974e04233b
+        relpath: 000000000692.jpg
+      - md5: 5cde95fefe9698cff509894409246e97
+        relpath: 000000000693.jpg
+      - md5: d0db09f53bee69df78f69eacba476df6
+        relpath: 000000000699.jpg
+      - md5: f3b381500db5ae364944db00b3157837
+        relpath: 000000000706.jpg
+      - md5: fda770d259d32c884f513a884f489eaf
+        relpath: 000000000711.jpg
+      - md5: 51883fe609155ece1368ee3b801dcc63
+        relpath: 000000000714.jpg
+      - md5: 8ae10c73ec8f9514f9e954cf2985f102
+        relpath: 000000000715.jpg
+      - md5: 22e76890411975f0627b4fd07e3f63f7
+        relpath: 000000000716.jpg
+      - md5: 9d723c96554da33e5ff6fe97f33bb86a
+        relpath: 000000000722.jpg
+      - md5: f92e02590709d542241a6f5fcc6f74b9
+        relpath: 000000000723.jpg
+      - md5: a678aaf231adfd7ecd0d15004d7a1474
+        relpath: 000000000730.jpg
+      - md5: 4c7148686a372badbfb35f75d55b0e20
+        relpath: 000000000731.jpg
+      - md5: 760d61d4c761c03c338975aea22baec0
+        relpath: 000000000735.jpg
+      - md5: 4d81ec3262a89ca4bf20fb2a683374ea
+        relpath: 000000000753.jpg
+      - md5: 4cd304a60f0e625aad0fa845c6d14779
+        relpath: 000000000754.jpg
+      - md5: a8ba7271a253e47d08e74bac671fb6d6
+        relpath: 000000000757.jpg
+  train:
+    cmd: python -c "print('Training ...')" > model/trained_model.pkl
+    deps:
+    - path: data/training
+      md5: 3ed4bf57846ec8c6899fecb8538bdd9f.dir
+      size: 23221428
+      nfiles: 154
+      files:
+      - md5: 2ad4acbf285bf8451a352153ecc18b4f
+        relpath: 000000000009.jpg
+      - md5: 93f25d19d885329f9e5d9117c0fe8272
+        relpath: 000000000025.jpg
+      - md5: 61e7641ecae8aa7eebd4a1deca347811
+        relpath: 000000000030.jpg
+      - md5: c8cf74aa607438f2210c7877ba271ea8
+        relpath: 000000000034.jpg
+      - md5: cd68e84c2968caf9b05e184e64eb339e
+        relpath: 000000000036.jpg
+      - md5: 3cb150ae8a2f5861550611daa601d9fe
+        relpath: 000000000042.jpg
+      - md5: 2eecb0947b4e80d7c3b3441aaa17d437
+        relpath: 000000000049.jpg
+      - md5: 8628ea387a170852c369fdbfd940306c
+        relpath: 000000000061.jpg
+      - md5: 74bbf21553e30db313d6440f20a6c799
+        relpath: 000000000064.jpg
+      - md5: a0c7c898b24fa70c22d3b0794367b35d
+        relpath: 000000000071.jpg
+      - md5: e22a5ef25d08ce01238b9bacc7c31d92
+        relpath: 000000000072.jpg
+      - md5: b96c2d58e7918fb3365b5700778ab10a
+        relpath: 000000000073.jpg
+      - md5: 164803b57942f108af3d8dec7babc641
+        relpath: 000000000074.jpg
+      - md5: c4d9e7955378f522fd112b8ce1f126c9
+        relpath: 000000000077.jpg
+      - md5: 5e8de49c07ff59e03b0ba7e75af07752
+        relpath: 000000000078.jpg
+      - md5: 9982345cde5b97309d1f3e4cc9dbb1fc
+        relpath: 000000000081.jpg
+      - md5: 065f51de88998a95fa3113998774af74
+        relpath: 000000000086.jpg
+      - md5: f4e396cc87a286b0940e6b551a2af9ba
+        relpath: 000000000089.jpg
+      - md5: bf7bdac01bbd14056c7f1704bce83281
+        relpath: 000000000092.jpg
+      - md5: 30db25c2ecdb79fc46fa6dbae63cf0a4
+        relpath: 000000000094.jpg
+      - md5: 8ded067424525492f74ec25752bd9c3f
+        relpath: 000000000109.jpg
+      - md5: 23ee9d2be85f0888240d4e88a8c49904
+        relpath: 000000000110.jpg
+      - md5: a37a5ba2c7a2fc1a14c57967d6941b53
+        relpath: 000000000113.jpg
+      - md5: d2f9b9a0acdb4ecc73884aefd4a201e1
+        relpath: 000000000127.jpg
+      - md5: d78455dfc227765c034b5dae95e5880b
+        relpath: 000000000133.jpg
+      - md5: d8d1e0109edb32382d94a1260b3fde91
+        relpath: 000000000136.jpg
+      - md5: 339d0f9607c9ce3fec681ca3eeca1216
+        relpath: 000000000138.jpg
+      - md5: 75b37756f557ca668eabffaba11ce843
+        relpath: 000000000142.jpg
+      - md5: c205d923ad43153facd2d81e4fbedcd0
+        relpath: 000000000143.jpg
+      - md5: 5c3b132a5ac9aa6b65c3fbccf5bd8aae
+        relpath: 000000000144.jpg
+      - md5: 930559902d3757f9a918e896340840c1
+        relpath: 000000000149.jpg
+      - md5: 72711e1fa6c13e4d032a5b4c98475862
+        relpath: 000000000151.jpg
+      - md5: d7d8752cfef5a649cb76fc83a29e7020
+        relpath: 000000000154.jpg
+      - md5: 0b27130754f8b9f080e2018e477356e5
+        relpath: 000000000164.jpg
+      - md5: 53dd2d8ee2cd6841e59d0f7f48a96426
+        relpath: 000000000165.jpg
+      - md5: 6cdfe820d79d4dfe8ea39d3734a5f238
+        relpath: 000000000192.jpg
+      - md5: 85fa38dbcedbe8619926b3255b25c9e2
+        relpath: 000000000194.jpg
+      - md5: 1a1eae51b52d4984e0c20755fe3a299e
+        relpath: 000000000196.jpg
+      - md5: 812de9f90cce08afa0f6fec96dd3770a
+        relpath: 000000000201.jpg
+      - md5: f8946fb744237c3604c2df7285cfbed1
+        relpath: 000000000208.jpg
+      - md5: 7f45e800090917ac47fd93dd1ad458cd
+        relpath: 000000000241.jpg
+      - md5: 02e5eaf642cc423538fbde8845089013
+        relpath: 000000000247.jpg
+      - md5: 1ca95dec1db85a369d24ecfe3ac99bea
+        relpath: 000000000250.jpg
+      - md5: ec778ebd991928a8e09944a23914f168
+        relpath: 000000000257.jpg
+      - md5: 7d2c8fbe006893632a85dd59af215781
+        relpath: 000000000260.jpg
+      - md5: d95306ede2ddb27ac8d82a0cc28ac158
+        relpath: 000000000263.jpg
+      - md5: 94bbb2147a592274e9e2544e53965b80
+        relpath: 000000000283.jpg
+      - md5: 0822a16f610a43a0b232eaab842ba624
+        relpath: 000000000294.jpg
+      - md5: c4a9a44c09f83b57edd86bb97563287d
+        relpath: 000000000307.jpg
+      - md5: cf120c69e85caab3f6c5c58a391e1eeb
+        relpath: 000000000308.jpg
+      - md5: 7422dc88f9d2f72e389ef2ef96bdec1a
+        relpath: 000000000309.jpg
+      - md5: 406cc3938f6a418eac4d95ea4dbdc84e
+        relpath: 000000000312.jpg
+      - md5: f88afcd48410d155b52926c307a246fb
+        relpath: 000000000315.jpg
+      - md5: 148f76fb967045fe84d211684a218342
+        relpath: 000000000321.jpg
+      - md5: 8b7bf4420aa1a44830c3126e0dff5b0f
+        relpath: 000000000322.jpg
+      - md5: 68176ce849cb58474aa109498a4820f6
+        relpath: 000000000326.jpg
+      - md5: 98821bb605642f7f17d0c2f31c8392c2
+        relpath: 000000000328.jpg
+      - md5: acecd6566bde5582c193e5d733a88562
+        relpath: 000000000332.jpg
+      - md5: f50d21af7f66741a29d117957a4f21bb
+        relpath: 000000000338.jpg
+      - md5: 7019cb601852fa1300657ae991ef91e0
+        relpath: 000000000349.jpg
+      - md5: 7aa262c93c742f8c2e149cfa99fc78a0
+        relpath: 000000000357.jpg
+      - md5: b70ee4dc822c472180318d5fa6882125
+        relpath: 000000000359.jpg
+      - md5: 02756d5f97edd26679417bb26e5caaab
+        relpath: 000000000360.jpg
+      - md5: e76671942f5bfd51e2c427cbc349ff69
+        relpath: 000000000368.jpg
+      - md5: ab5c4f2e9c86af7c9f16283caf6e3d4e
+        relpath: 000000000370.jpg
+      - md5: 4b7e05c81d2bb15cf51a89ce7c56bc5b
+        relpath: 000000000382.jpg
+      - md5: 72125f8acc381c23c4ef25adc9b4d588
+        relpath: 000000000384.jpg
+      - md5: 518b36c9a60c683e6bce730f4243763d
+        relpath: 000000000387.jpg
+      - md5: 4133df057d6f22cbb9329c07333dcabd
+        relpath: 000000000389.jpg
+      - md5: 07e065bd96b0360ec617a530deda3096
+        relpath: 000000000394.jpg
+      - md5: 64218e038feb0a5915e059c48fc8e00c
+        relpath: 000000000395.jpg
+      - md5: 028bc94536abd1766c71ec3dd1612de1
+        relpath: 000000000397.jpg
+      - md5: b2202347bc56f01468c46aadea220768
+        relpath: 000000000400.jpg
+      - md5: 5734affd0bb4cdba765364ba4e61da06
+        relpath: 000000000404.jpg
+      - md5: 20b666f01589a662fbd6515d69393a1a
+        relpath: 000000000415.jpg
+      - md5: 1e8052b8aa40d7d5faa3da6b37fbc2cd
+        relpath: 000000000419.jpg
+      - md5: 022d8349ed011c1fbce3cefc5ce25136
+        relpath: 000000000428.jpg
+      - md5: 68caaafbcc19a479c4c432df0555438c
+        relpath: 000000000431.jpg
+      - md5: 4b6928321f95dcfe63cdda8bb2bde463
+        relpath: 000000000436.jpg
+      - md5: de6c902a3bd6645290e0f50e344a0a5e
+        relpath: 000000000438.jpg
+      - md5: a61c2b8bf515f7fcf6249661c582068c
+        relpath: 000000000443.jpg
+      - md5: 1bbca2256fb18df9a88a9e703db08597
+        relpath: 000000000446.jpg
+      - md5: 4386704f21aadaf4b59adf7cde3e7ed1
+        relpath: 000000000450.jpg
+      - md5: bb135c6ef92d6710b538f2a6d76ed192
+        relpath: 000000000459.jpg
+      - md5: 3a230be4755b9af725cda70d47e3a381
+        relpath: 000000000471.jpg
+      - md5: 9fab680cb7dbb3f6056b84f1075d923c
+        relpath: 000000000472.jpg
+      - md5: aee093883d1f40ac20e007eb4a75fc01
+        relpath: 000000000474.jpg
+      - md5: 64b952a0bab0afcb4c3bf6cb38918534
+        relpath: 000000000486.jpg
+      - md5: ff1d282774941144a80ddaf74d501760
+        relpath: 000000000488.jpg
+      - md5: a04fe82b8d7931e643308eda1157faf4
+        relpath: 000000000490.jpg
+      - md5: 5520a77198b75d634ba726b29c1c7e7d
+        relpath: 000000000491.jpg
+      - md5: 6c10436130d20f035f4fe74778da63eb
+        relpath: 000000000502.jpg
+      - md5: ba4df7051695a91b2c632176ce643234
+        relpath: 000000000508.jpg
+      - md5: d01085e5b82e527406dfd2fcf2d67654
+        relpath: 000000000510.jpg
+      - md5: 7c6c6e1d949222cd93f02e6d6972f275
+        relpath: 000000000514.jpg
+      - md5: 71e058a8292bbfcd575d7dccc7a5387e
+        relpath: 000000000520.jpg
+      - md5: d265ff63eb22ab8b544a79bb851ded82
+        relpath: 000000000529.jpg
+      - md5: 6c843517f1222632c122a2c394c79e38
+        relpath: 000000000531.jpg
+      - md5: 8875cd33b4930fbac89d19234a941a64
+        relpath: 000000000532.jpg
+      - md5: 61554af8ac197dca84edb12035b0bd21
+        relpath: 000000000536.jpg
+      - md5: f87e356614ca708bae99650ddf10222e
+        relpath: 000000000540.jpg
+      - md5: 27bf7c0bcd289e73e3911fd88849db2a
+        relpath: 000000000542.jpg
+      - md5: ae6fb98b0c0c4b62c5bbd867141e34bf
+        relpath: 000000000544.jpg
+      - md5: db2ad26c294c90d305290562f139ff32
+        relpath: 000000000560.jpg
+      - md5: 6b90629912ac19240bb61cccb8b52f3a
+        relpath: 000000000562.jpg
+      - md5: 49ccd2046f283b9208b1d1283d096072
+        relpath: 000000000564.jpg
+      - md5: 4cdcc595698719985d67187a43aa1009
+        relpath: 000000000569.jpg
+      - md5: 735c9ea6cd036f6980b6230348eb8da8
+        relpath: 000000000572.jpg
+      - md5: 32d04cbe8b6ac2b195022279ee8c44b5
+        relpath: 000000000575.jpg
+      - md5: b1eedf0f54ee777a3654d2a4572c10bf
+        relpath: 000000000581.jpg
+      - md5: a01dc902cf163942637fcd4273b6c118
+        relpath: 000000000584.jpg
+      - md5: a229bbd575a05fee9908a294dfa46c71
+        relpath: 000000000589.jpg
+      - md5: 19272f865f4f366082e671ac625c9565
+        relpath: 000000000590.jpg
+      - md5: 3a78b4c75eda90369f59a70511b17288
+        relpath: 000000000595.jpg
+      - md5: 4fe66e84864ce3d82b7347a31c1be7ba
+        relpath: 000000000597.jpg
+      - md5: 8f9b9f0c0842af3edfe34af9f2ef0482
+        relpath: 000000000599.jpg
+      - md5: 930c9a1e01d71c2e4198156dcc893c28
+        relpath: 000000000605.jpg
+      - md5: b1db420675ea52fdad13f10f85025130
+        relpath: 000000000612.jpg
+      - md5: 9ba47d024ccbada3fec6262345b48f66
+        relpath: 000000000620.jpg
+      - md5: 50017cd3a6d21d209cde26568062d503
+        relpath: 000000000623.jpg
+      - md5: 5c510c7f2742edd3a1d1341609ae1bcd
+        relpath: 000000000625.jpg
+      - md5: 0045d2f5d50d67db3a8c129f4e1f9502
+        relpath: 000000000626.jpg
+      - md5: aebfaa2353dc1caa5d9ebf48236f1a8d
+        relpath: 000000000629.jpg
+      - md5: 17a125e5cec12fbb1a5bf3a9401a51f9
+        relpath: 000000000634.jpg
+      - md5: c1d392e4bef59601bbd9400dddbf1085
+        relpath: 000000000636.jpg
+      - md5: a669b47566a1527b6dcf42a887050d49
+        relpath: 000000000641.jpg
+      - md5: 6d859dc02553ff59f5b3c2f75d774ede
+        relpath: 000000000643.jpg
+      - md5: 9801c006e5537b4e05180e61390f9eeb
+        relpath: 000000000650.jpg
+      - md5: e7e32b18cfefcfb504802f254aabf076
+        relpath: 000000000656.jpg
+      - md5: f6d5f4d92550ea1e99ac4e8641c1ffe7
+        relpath: 000000000659.jpg
+      - md5: 3d92704c1194ac7fbfd9107615a970a2
+        relpath: 000000000661.jpg
+      - md5: 5a926458244ffefc04283304024b5470
+        relpath: 000000000670.jpg
+      - md5: ec9b80356c67b602ddb1ab1d992e392c
+        relpath: 000000000671.jpg
+      - md5: 3147c25c93c9847fcb83b1822c32e65e
+        relpath: 000000000673.jpg
+      - md5: 9a8104ac9464be492f03903033f826cb
+        relpath: 000000000675.jpg
+      - md5: e63b91d3b5a0b82c02f1a3528ea1937b
+        relpath: 000000000681.jpg
+      - md5: 62b6b86585a08b417df7a0c340a90c44
+        relpath: 000000000684.jpg
+      - md5: 34128cbbeeaec7fc21d6b8ee7cd5ce57
+        relpath: 000000000690.jpg
+      - md5: e63767711c9c919c8b74b4974e04233b
+        relpath: 000000000692.jpg
+      - md5: 5cde95fefe9698cff509894409246e97
+        relpath: 000000000693.jpg
+      - md5: d0db09f53bee69df78f69eacba476df6
+        relpath: 000000000699.jpg
+      - md5: f3b381500db5ae364944db00b3157837
+        relpath: 000000000706.jpg
+      - md5: fda770d259d32c884f513a884f489eaf
+        relpath: 000000000711.jpg
+      - md5: 51883fe609155ece1368ee3b801dcc63
+        relpath: 000000000714.jpg
+      - md5: 8ae10c73ec8f9514f9e954cf2985f102
+        relpath: 000000000715.jpg
+      - md5: 22e76890411975f0627b4fd07e3f63f7
+        relpath: 000000000716.jpg
+      - md5: 9d723c96554da33e5ff6fe97f33bb86a
+        relpath: 000000000722.jpg
+      - md5: f92e02590709d542241a6f5fcc6f74b9
+        relpath: 000000000723.jpg
+      - md5: a678aaf231adfd7ecd0d15004d7a1474
+        relpath: 000000000730.jpg
+      - md5: 4c7148686a372badbfb35f75d55b0e20
+        relpath: 000000000731.jpg
+      - md5: 760d61d4c761c03c338975aea22baec0
+        relpath: 000000000735.jpg
+      - md5: 4d81ec3262a89ca4bf20fb2a683374ea
+        relpath: 000000000753.jpg
+      - md5: 4cd304a60f0e625aad0fa845c6d14779
+        relpath: 000000000754.jpg
+      - md5: a8ba7271a253e47d08e74bac671fb6d6
+        relpath: 000000000757.jpg
+    outs:
+    - path: model/trained_model.pkl
+      md5: 61e15382db2d425eab86bd4f348e5274
+      size: 14
+  extract-data:
+    cmd:
+    - python -c "print('Extracting data ...')"
+    - cp -r ../data/ data/extracted/
+    outs:
+    - path: data/extracted/
+      md5: 3ed4bf57846ec8c6899fecb8538bdd9f.dir
+      size: 23221428
+      nfiles: 154
+      files:
+      - size: 224297
+        md5: 2ad4acbf285bf8451a352153ecc18b4f
+        relpath: 000000000009.jpg
+      - size: 43762
+        md5: 93f25d19d885329f9e5d9117c0fe8272
+        relpath: 000000000025.jpg
+      - size: 21804
+        md5: 61e7641ecae8aa7eebd4a1deca347811
+        relpath: 000000000030.jpg
+      - size: 406018
+        md5: c8cf74aa607438f2210c7877ba271ea8
+        relpath: 000000000034.jpg
+      - size: 52954
+        md5: cd68e84c2968caf9b05e184e64eb339e
+        relpath: 000000000036.jpg
+      - size: 213308
+        md5: 3cb150ae8a2f5861550611daa601d9fe
+        relpath: 000000000042.jpg
+      - size: 124619
+        md5: 2eecb0947b4e80d7c3b3441aaa17d437
+        relpath: 000000000049.jpg
+      - size: 58075
+        md5: 8628ea387a170852c369fdbfd940306c
+        relpath: 000000000061.jpg
+      - size: 220869
+        md5: 74bbf21553e30db313d6440f20a6c799
+        relpath: 000000000064.jpg
+      - size: 214185
+        md5: a0c7c898b24fa70c22d3b0794367b35d
+        relpath: 000000000071.jpg
+      - size: 239116
+        md5: e22a5ef25d08ce01238b9bacc7c31d92
+        relpath: 000000000072.jpg
+      - size: 383651
+        md5: b96c2d58e7918fb3365b5700778ab10a
+        relpath: 000000000073.jpg
+      - size: 176151
+        md5: 164803b57942f108af3d8dec7babc641
+        relpath: 000000000074.jpg
+      - size: 159213
+        md5: c4d9e7955378f522fd112b8ce1f126c9
+        relpath: 000000000077.jpg
+      - size: 209700
+        md5: 5e8de49c07ff59e03b0ba7e75af07752
+        relpath: 000000000078.jpg
+      - size: 113261
+        md5: 9982345cde5b97309d1f3e4cc9dbb1fc
+        relpath: 000000000081.jpg
+      - size: 192221
+        md5: 065f51de88998a95fa3113998774af74
+        relpath: 000000000086.jpg
+      - size: 163624
+        md5: f4e396cc87a286b0940e6b551a2af9ba
+        relpath: 000000000089.jpg
+      - size: 73926
+        md5: bf7bdac01bbd14056c7f1704bce83281
+        relpath: 000000000092.jpg
+      - size: 225187
+        md5: 30db25c2ecdb79fc46fa6dbae63cf0a4
+        relpath: 000000000094.jpg
+      - size: 31241
+        md5: 8ded067424525492f74ec25752bd9c3f
+        relpath: 000000000109.jpg
+      - size: 200826
+        md5: 23ee9d2be85f0888240d4e88a8c49904
+        relpath: 000000000110.jpg
+      - size: 256369
+        md5: a37a5ba2c7a2fc1a14c57967d6941b53
+        relpath: 000000000113.jpg
+      - size: 205469
+        md5: d2f9b9a0acdb4ecc73884aefd4a201e1
+        relpath: 000000000127.jpg
+      - size: 163607
+        md5: d78455dfc227765c034b5dae95e5880b
+        relpath: 000000000133.jpg
+      - size: 105082
+        md5: d8d1e0109edb32382d94a1260b3fde91
+        relpath: 000000000136.jpg
+      - size: 234815
+        md5: 339d0f9607c9ce3fec681ca3eeca1216
+        relpath: 000000000138.jpg
+      - size: 108150
+        md5: 75b37756f557ca668eabffaba11ce843
+        relpath: 000000000142.jpg
+      - size: 59554
+        md5: c205d923ad43153facd2d81e4fbedcd0
+        relpath: 000000000143.jpg
+      - size: 225663
+        md5: 5c3b132a5ac9aa6b65c3fbccf5bd8aae
+        relpath: 000000000144.jpg
+      - size: 41292
+        md5: 930559902d3757f9a918e896340840c1
+        relpath: 000000000149.jpg
+      - size: 382714
+        md5: 72711e1fa6c13e4d032a5b4c98475862
+        relpath: 000000000151.jpg
+      - size: 141864
+        md5: d7d8752cfef5a649cb76fc83a29e7020
+        relpath: 000000000154.jpg
+      - size: 161255
+        md5: 0b27130754f8b9f080e2018e477356e5
+        relpath: 000000000164.jpg
+      - size: 229230
+        md5: 53dd2d8ee2cd6841e59d0f7f48a96426
+        relpath: 000000000165.jpg
+      - size: 64960
+        md5: 6cdfe820d79d4dfe8ea39d3734a5f238
+        relpath: 000000000192.jpg
+      - size: 196890
+        md5: 85fa38dbcedbe8619926b3255b25c9e2
+        relpath: 000000000194.jpg
+      - size: 158943
+        md5: 1a1eae51b52d4984e0c20755fe3a299e
+        relpath: 000000000196.jpg
+      - size: 159289
+        md5: 812de9f90cce08afa0f6fec96dd3770a
+        relpath: 000000000201.jpg
+      - size: 173987
+        md5: f8946fb744237c3604c2df7285cfbed1
+        relpath: 000000000208.jpg
+      - size: 107714
+        md5: 7f45e800090917ac47fd93dd1ad458cd
+        relpath: 000000000241.jpg
+      - size: 158250
+        md5: 02e5eaf642cc423538fbde8845089013
+        relpath: 000000000247.jpg
+      - size: 112982
+        md5: 1ca95dec1db85a369d24ecfe3ac99bea
+        relpath: 000000000250.jpg
+      - size: 208764
+        md5: ec778ebd991928a8e09944a23914f168
+        relpath: 000000000257.jpg
+      - size: 95001
+        md5: 7d2c8fbe006893632a85dd59af215781
+        relpath: 000000000260.jpg
+      - size: 224437
+        md5: d95306ede2ddb27ac8d82a0cc28ac158
+        relpath: 000000000263.jpg
+      - size: 25788
+        md5: 94bbb2147a592274e9e2544e53965b80
+        relpath: 000000000283.jpg
+      - size: 47494
+        md5: 0822a16f610a43a0b232eaab842ba624
+        relpath: 000000000294.jpg
+      - size: 298527
+        md5: c4a9a44c09f83b57edd86bb97563287d
+        relpath: 000000000307.jpg
+      - size: 138329
+        md5: cf120c69e85caab3f6c5c58a391e1eeb
+        relpath: 000000000308.jpg
+      - size: 338050
+        md5: 7422dc88f9d2f72e389ef2ef96bdec1a
+        relpath: 000000000309.jpg
+      - size: 299562
+        md5: 406cc3938f6a418eac4d95ea4dbdc84e
+        relpath: 000000000312.jpg
+      - size: 184384
+        md5: f88afcd48410d155b52926c307a246fb
+        relpath: 000000000315.jpg
+      - size: 52415
+        md5: 148f76fb967045fe84d211684a218342
+        relpath: 000000000321.jpg
+      - size: 99052
+        md5: 8b7bf4420aa1a44830c3126e0dff5b0f
+        relpath: 000000000322.jpg
+      - size: 55031
+        md5: 68176ce849cb58474aa109498a4820f6
+        relpath: 000000000326.jpg
+      - size: 60095
+        md5: 98821bb605642f7f17d0c2f31c8392c2
+        relpath: 000000000328.jpg
+      - size: 121451
+        md5: acecd6566bde5582c193e5d733a88562
+        relpath: 000000000332.jpg
+      - size: 81713
+        md5: f50d21af7f66741a29d117957a4f21bb
+        relpath: 000000000338.jpg
+      - size: 69067
+        md5: 7019cb601852fa1300657ae991ef91e0
+        relpath: 000000000349.jpg
+      - size: 131457
+        md5: 7aa262c93c742f8c2e149cfa99fc78a0
+        relpath: 000000000357.jpg
+      - size: 34317
+        md5: b70ee4dc822c472180318d5fa6882125
+        relpath: 000000000359.jpg
+      - size: 48847
+        md5: 02756d5f97edd26679417bb26e5caaab
+        relpath: 000000000360.jpg
+      - size: 349163
+        md5: e76671942f5bfd51e2c427cbc349ff69
+        relpath: 000000000368.jpg
+      - size: 30279
+        md5: ab5c4f2e9c86af7c9f16283caf6e3d4e
+        relpath: 000000000370.jpg
+      - size: 139405
+        md5: 4b7e05c81d2bb15cf51a89ce7c56bc5b
+        relpath: 000000000382.jpg
+      - size: 21319
+        md5: 72125f8acc381c23c4ef25adc9b4d588
+        relpath: 000000000384.jpg
+      - size: 166037
+        md5: 518b36c9a60c683e6bce730f4243763d
+        relpath: 000000000387.jpg
+      - size: 266643
+        md5: 4133df057d6f22cbb9329c07333dcabd
+        relpath: 000000000389.jpg
+      - size: 204092
+        md5: 07e065bd96b0360ec617a530deda3096
+        relpath: 000000000394.jpg
+      - size: 246526
+        md5: 64218e038feb0a5915e059c48fc8e00c
+        relpath: 000000000395.jpg
+      - size: 320595
+        md5: 028bc94536abd1766c71ec3dd1612de1
+        relpath: 000000000397.jpg
+      - size: 245588
+        md5: b2202347bc56f01468c46aadea220768
+        relpath: 000000000400.jpg
+      - size: 176144
+        md5: 5734affd0bb4cdba765364ba4e61da06
+        relpath: 000000000404.jpg
+      - size: 118150
+        md5: 20b666f01589a662fbd6515d69393a1a
+        relpath: 000000000415.jpg
+      - size: 152823
+        md5: 1e8052b8aa40d7d5faa3da6b37fbc2cd
+        relpath: 000000000419.jpg
+      - size: 102365
+        md5: 022d8349ed011c1fbce3cefc5ce25136
+        relpath: 000000000428.jpg
+      - size: 66764
+        md5: 68caaafbcc19a479c4c432df0555438c
+        relpath: 000000000431.jpg
+      - size: 137920
+        md5: 4b6928321f95dcfe63cdda8bb2bde463
+        relpath: 000000000436.jpg
+      - size: 220047
+        md5: de6c902a3bd6645290e0f50e344a0a5e
+        relpath: 000000000438.jpg
+      - size: 97673
+        md5: a61c2b8bf515f7fcf6249661c582068c
+        relpath: 000000000443.jpg
+      - size: 98423
+        md5: 1bbca2256fb18df9a88a9e703db08597
+        relpath: 000000000446.jpg
+      - size: 212846
+        md5: 4386704f21aadaf4b59adf7cde3e7ed1
+        relpath: 000000000450.jpg
+      - size: 28558
+        md5: bb135c6ef92d6710b538f2a6d76ed192
+        relpath: 000000000459.jpg
+      - size: 75358
+        md5: 3a230be4755b9af725cda70d47e3a381
+        relpath: 000000000471.jpg
+      - size: 50603
+        md5: 9fab680cb7dbb3f6056b84f1075d923c
+        relpath: 000000000472.jpg
+      - size: 34597
+        md5: aee093883d1f40ac20e007eb4a75fc01
+        relpath: 000000000474.jpg
+      - size: 217457
+        md5: 64b952a0bab0afcb4c3bf6cb38918534
+        relpath: 000000000486.jpg
+      - size: 105570
+        md5: ff1d282774941144a80ddaf74d501760
+        relpath: 000000000488.jpg
+      - size: 134664
+        md5: a04fe82b8d7931e643308eda1157faf4
+        relpath: 000000000490.jpg
+      - size: 56413
+        md5: 5520a77198b75d634ba726b29c1c7e7d
+        relpath: 000000000491.jpg
+      - size: 91690
+        md5: 6c10436130d20f035f4fe74778da63eb
+        relpath: 000000000502.jpg
+      - size: 148023
+        md5: ba4df7051695a91b2c632176ce643234
+        relpath: 000000000508.jpg
+      - size: 168520
+        md5: d01085e5b82e527406dfd2fcf2d67654
+        relpath: 000000000510.jpg
+      - size: 127005
+        md5: 7c6c6e1d949222cd93f02e6d6972f275
+        relpath: 000000000514.jpg
+      - size: 105015
+        md5: 71e058a8292bbfcd575d7dccc7a5387e
+        relpath: 000000000520.jpg
+      - size: 228538
+        md5: d265ff63eb22ab8b544a79bb851ded82
+        relpath: 000000000529.jpg
+      - size: 94873
+        md5: 6c843517f1222632c122a2c394c79e38
+        relpath: 000000000531.jpg
+      - size: 214068
+        md5: 8875cd33b4930fbac89d19234a941a64
+        relpath: 000000000532.jpg
+      - size: 22611
+        md5: 61554af8ac197dca84edb12035b0bd21
+        relpath: 000000000536.jpg
+      - size: 86068
+        md5: f87e356614ca708bae99650ddf10222e
+        relpath: 000000000540.jpg
+      - size: 131303
+        md5: 27bf7c0bcd289e73e3911fd88849db2a
+        relpath: 000000000542.jpg
+      - size: 188065
+        md5: ae6fb98b0c0c4b62c5bbd867141e34bf
+        relpath: 000000000544.jpg
+      - size: 82012
+        md5: db2ad26c294c90d305290562f139ff32
+        relpath: 000000000560.jpg
+      - size: 13398
+        md5: 6b90629912ac19240bb61cccb8b52f3a
+        relpath: 000000000562.jpg
+      - size: 130509
+        md5: 49ccd2046f283b9208b1d1283d096072
+        relpath: 000000000564.jpg
+      - size: 129689
+        md5: 4cdcc595698719985d67187a43aa1009
+        relpath: 000000000569.jpg
+      - size: 88300
+        md5: 735c9ea6cd036f6980b6230348eb8da8
+        relpath: 000000000572.jpg
+      - size: 542583
+        md5: 32d04cbe8b6ac2b195022279ee8c44b5
+        relpath: 000000000575.jpg
+      - size: 188813
+        md5: b1eedf0f54ee777a3654d2a4572c10bf
+        relpath: 000000000581.jpg
+      - size: 154361
+        md5: a01dc902cf163942637fcd4273b6c118
+        relpath: 000000000584.jpg
+      - size: 44015
+        md5: a229bbd575a05fee9908a294dfa46c71
+        relpath: 000000000589.jpg
+      - size: 72920
+        md5: 19272f865f4f366082e671ac625c9565
+        relpath: 000000000590.jpg
+      - size: 180190
+        md5: 3a78b4c75eda90369f59a70511b17288
+        relpath: 000000000595.jpg
+      - size: 174328
+        md5: 4fe66e84864ce3d82b7347a31c1be7ba
+        relpath: 000000000597.jpg
+      - size: 246066
+        md5: 8f9b9f0c0842af3edfe34af9f2ef0482
+        relpath: 000000000599.jpg
+      - size: 318533
+        md5: 930c9a1e01d71c2e4198156dcc893c28
+        relpath: 000000000605.jpg
+      - size: 173747
+        md5: b1db420675ea52fdad13f10f85025130
+        relpath: 000000000612.jpg
+      - size: 128496
+        md5: 9ba47d024ccbada3fec6262345b48f66
+        relpath: 000000000620.jpg
+      - size: 112452
+        md5: 50017cd3a6d21d209cde26568062d503
+        relpath: 000000000623.jpg
+      - size: 171193
+        md5: 5c510c7f2742edd3a1d1341609ae1bcd
+        relpath: 000000000625.jpg
+      - size: 157564
+        md5: 0045d2f5d50d67db3a8c129f4e1f9502
+        relpath: 000000000626.jpg
+      - size: 292965
+        md5: aebfaa2353dc1caa5d9ebf48236f1a8d
+        relpath: 000000000629.jpg
+      - size: 109536
+        md5: 17a125e5cec12fbb1a5bf3a9401a51f9
+        relpath: 000000000634.jpg
+      - size: 175444
+        md5: c1d392e4bef59601bbd9400dddbf1085
+        relpath: 000000000636.jpg
+      - size: 208846
+        md5: a669b47566a1527b6dcf42a887050d49
+        relpath: 000000000641.jpg
+      - size: 46060
+        md5: 6d859dc02553ff59f5b3c2f75d774ede
+        relpath: 000000000643.jpg
+      - size: 118695
+        md5: 9801c006e5537b4e05180e61390f9eeb
+        relpath: 000000000650.jpg
+      - size: 231466
+        md5: e7e32b18cfefcfb504802f254aabf076
+        relpath: 000000000656.jpg
+      - size: 242946
+        md5: f6d5f4d92550ea1e99ac4e8641c1ffe7
+        relpath: 000000000659.jpg
+      - size: 68493
+        md5: 3d92704c1194ac7fbfd9107615a970a2
+        relpath: 000000000661.jpg
+      - size: 78426
+        md5: 5a926458244ffefc04283304024b5470
+        relpath: 000000000670.jpg
+      - size: 219734
+        md5: ec9b80356c67b602ddb1ab1d992e392c
+        relpath: 000000000671.jpg
+      - size: 54125
+        md5: 3147c25c93c9847fcb83b1822c32e65e
+        relpath: 000000000673.jpg
+      - size: 53344
+        md5: 9a8104ac9464be492f03903033f826cb
+        relpath: 000000000675.jpg
+      - size: 66041
+        md5: e63b91d3b5a0b82c02f1a3528ea1937b
+        relpath: 000000000681.jpg
+      - size: 261123
+        md5: 62b6b86585a08b417df7a0c340a90c44
+        relpath: 000000000684.jpg
+      - size: 297321
+        md5: 34128cbbeeaec7fc21d6b8ee7cd5ce57
+        relpath: 000000000690.jpg
+      - size: 46905
+        md5: e63767711c9c919c8b74b4974e04233b
+        relpath: 000000000692.jpg
+      - size: 232638
+        md5: 5cde95fefe9698cff509894409246e97
+        relpath: 000000000693.jpg
+      - size: 30291
+        md5: d0db09f53bee69df78f69eacba476df6
+        relpath: 000000000699.jpg
+      - size: 196707
+        md5: f3b381500db5ae364944db00b3157837
+        relpath: 000000000706.jpg
+      - size: 113424
+        md5: fda770d259d32c884f513a884f489eaf
+        relpath: 000000000711.jpg
+      - size: 60090
+        md5: 51883fe609155ece1368ee3b801dcc63
+        relpath: 000000000714.jpg
+      - size: 189100
+        md5: 8ae10c73ec8f9514f9e954cf2985f102
+        relpath: 000000000715.jpg
+      - size: 37331
+        md5: 22e76890411975f0627b4fd07e3f63f7
+        relpath: 000000000716.jpg
+      - size: 181291
+        md5: 9d723c96554da33e5ff6fe97f33bb86a
+        relpath: 000000000722.jpg
+      - size: 201689
+        md5: f92e02590709d542241a6f5fcc6f74b9
+        relpath: 000000000723.jpg
+      - size: 195410
+        md5: a678aaf231adfd7ecd0d15004d7a1474
+        relpath: 000000000730.jpg
+      - size: 222355
+        md5: 4c7148686a372badbfb35f75d55b0e20
+        relpath: 000000000731.jpg
+      - size: 135509
+        md5: 760d61d4c761c03c338975aea22baec0
+        relpath: 000000000735.jpg
+      - size: 41641
+        md5: 4d81ec3262a89ca4bf20fb2a683374ea
+        relpath: 000000000753.jpg
+      - size: 23173
+        md5: 4cd304a60f0e625aad0fa845c6d14779
+        relpath: 000000000754.jpg
+      - size: 188471
+        md5: a8ba7271a253e47d08e74bac671fb6d6
+        relpath: 000000000757.jpg
+  upload-data:
+    cmd: dvc push -r s3_storage_data data/extracted/ > upload_log.txt
+    deps:
+    - path: data/extracted/
+      md5: 3ed4bf57846ec8c6899fecb8538bdd9f.dir
+      size: 23221428
+      nfiles: 154
+    outs:
+    - path: upload_log.txt
+      md5: 9d7ae26e5fda75ca534f71ea717d6307
+      size: 111
+  upload_model:
+    cmd: dvc push -r s3_storage_training model/trained_model.pkl
+    deps:
+    - path: model/trained_model.pkl
+      md5: 61e15382db2d425eab86bd4f348e5274
+      size: 14

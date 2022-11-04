@@ -1,0 +1,41 @@
+stages:
+  extract-data:
+    cmd:
+    - python -c "print('Extracting data ...')"
+    - cp -r ../data/ data/extracted/
+    outs:
+      - data/extracted/
+  
+  upload-data:
+    cmd: dvc push -r s3_storage_data data/extracted/ > upload_log.txt
+    deps:
+      - data/extracted/
+    outs:
+    - upload_log.txt:
+        cache: false
+  
+  download-data:
+    cmd: dvc get-url ${config.s3_path} data/training
+    params:
+      - configs/segments.yml:
+        - config
+    vars:
+      - configs/segments.yml
+    outs:
+      - data/training:
+          cache: false
+    deps:
+      - configs/segments.yml
+      - upload_log.txt
+  
+  train:
+    cmd: python -c "print('Training ...')" > model/trained_model.pkl
+    deps:
+      - data/training
+    outs:
+      - model/trained_model.pkl
+  
+  upload_model:
+    cmd: dvc push -r s3_storage_training model/trained_model.pkl
+    deps:
+      - model/trained_model.pkl

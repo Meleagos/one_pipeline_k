@@ -1,0 +1,2 @@
+config:
+  s3_path: s3://danmartinec-iterative-bucket/data_registry/data/coco17_sample/

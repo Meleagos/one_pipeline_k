@@ -1,0 +1,13 @@
+[remote "s3_storage_data"]
+    url = s3://danmartinec-iterative-bucket/data_registry/
+    version_aware = true
+    worktree = true
+[remote "s3_storage_training"]
+    url = s3://danmartinec-iterative-bucket/ml_training_cloud/
+    version_aware = true
+    worktree = true
+['remote "myremote"']
+    url = C:\\Iterative\\Clients\\local_remote
+[core]
+    remote = myremote
+    
